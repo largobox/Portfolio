@@ -1,0 +1,37 @@
+<section>
+	
+	<h3 id = 'about'>About myself</h3>
+
+	<div class="about_cnt">
+		
+		<div class="face_pic"></div>
+
+		<div class="icon-1">{% include icons/icon_pencil.html %}</div>
+		<div class="icon-2">{% include icons/icon_mouse.html %}</div>
+		<div class="icon-3">{% include icons/icon_browser.html %}</div>
+		<div class="icon-4">{% include icons/icon_video.html %}</div>		
+
+	</div>
+	
+	<div class="about_txt">
+		<p><strong>Look, Think and Just do it.</strong> I love my work and undestand for whom I do it.</p>
+	</div>
+
+  <div class="skill_cnt">
+
+    {% for skill in site.data.base_data.skills %}
+
+      <div class="skill_el">
+        <div class="skill_label">{{ skill.name }}</div>
+        <div class="skill_icons rate_{{ skill.value }}">
+          {% for i in (1..10) %}
+            <span></span>
+          {% endfor %}
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+</section>

@@ -1,0 +1,51 @@
+form
+	max-width: 460px
+	margin: 0px auto 50px
+
+	input, textarea
+		border: 3px solid $color_h
+		width: 100%
+		box-sizing: border-box
+		padding: 10px
+	
+		&:focus
+			outline: none
+			border-color: $color_h_light
+
+	textarea
+		height: 10em
+
+	.submit_wrap
+		text-align: right
+
+		[type='submit']
+			background: $color_h
+			color: #fafafa
+			font-size: 18px
+			text-transform: uppercase
+			width: 33%
+
+			&:hover
+				background: $color_h_light
+				border: 3px solid $color_h_light
+
+
+	.contact_info
+
+		label
+			width: 50%
+			float: left
+			box-sizing: border-box
+
+			&:nth-child(1)
+				padding-right: 8px
+
+			&:nth-child(2)
+				padding-left: 8px
+
+	label
+		display: block
+		margin-bottom: 20px
+
+		span
+			opacity: 0.65

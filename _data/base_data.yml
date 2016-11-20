@@ -1,0 +1,29 @@
+settings:
+email: 'sergey.event@gmail.com'
+
+
+skills:
+- {name: Planning, value: '7'}
+- {name: Communication, value: '5'}
+- {name: Learning, value: '9'}
+- {name: Visual Design, value: '5'}
+- {name: UX Design, value: '8'}
+- {name: Programming, value: '6'}
+
+projects:
+- {name: ShinyShiny Portfolio, folder: proj_0}
+- {name: GarageTools, folder: proj_1}
+- {name: Look, folder: coming_soon}
+- {name: Think, folder: coming_soon}
+- {name: And contact me, folder: coming_soon}
+- {name: I`m willing, folder: coming_soon}
+- {name: to offer you, folder: coming_soon}
+- {name: some gift, folder: coming_soon}
+
+clients:
+- {avatar: man_1.png, logo: logo_1.png, name: Alfred Pennyworth, title: Fictional person, content: "<b>In the near feature</b> there will be comments of amazing people"}
+- {avatar: man_3.png, logo: logo_2.png, name: Bruce Banner, title: Fictional person, content: "<b>In the near feature</b> there will be comments of amazing people"}
+- {avatar: man_2.png, logo: logo_3.png, name: Hank Pym, title: Fictional person, content: "<b>In the near feature</b> will be comments of amazing people"}
+- {avatar: man_4.png, logo: logo_4.png, name: Reed Richards, title: Fictional person, content: "<b>In the near feature</b> there will be comments of amazing people"}
+
+

@@ -1,0 +1,62 @@
+header
+	background:
+		repeat: no-repeat, no-repeat
+		size: 50px 50px, cover
+		blend-mode: overlay, normal
+		position: 30px 20px, 50% 50%
+		image: url(../img/logo.svg), url(../img/karibskie-ostrova-ostrov.jpg)
+	padding-bottom: 50px
+
+	nav
+		float: right
+		padding: 30px 30px 0 0
+
+		a
+			display: inline-block
+			margin-left: 30px
+			color: rgba(250,250,250,0.7)
+			text-decoration: none
+			@extend %small-bold
+
+			&:hover
+				color: rgba(250,250,250,1)
+	h1
+		text-align: center
+		font:
+			size: 400%
+			weight: 700
+		color: #fafafa
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		margin-bottom: 20px
+		clear: both
+		padding-top: 100px
+
+		span
+			display: inline-block
+			padding: 0.2em 0.5em
+			border: #fafafa solid 10px
+	p
+		text-align: center
+		font:
+			weight: 700
+		letter-spacing: 0.05em
+		text-transform: uppercase
+		color: #fafafa
+		line-height: 1
+
+@media (max-width: 640px)
+	header
+		background:
+			position: 50% 20px, 50% 50%
+
+		nav
+			float: none
+			text-align: center
+			padding-top: 80px
+
+		h1
+			font-size: 250%
+
+		p
+			font-size: 90%	

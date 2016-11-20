@@ -1,0 +1,32 @@
+@import 'animation'
+
+$color_h: #c99065
+$color_h_light: #e1c184
+$bgcolor: #e5eaee
+
+%small-bold
+	font:
+		size: 14px
+		weight: 700
+	text-transform: uppercase
+	text-decoration: none
+
+%logo-pic
+
+@mixin clearfix()
+	&:before, &:after 
+		content: ""
+		display: table    
+	&:after 
+		clear: both 
+
+@mixin size($x)
+	width: $x
+	height: $x
+
+@mixin position($position_name, $top, $right, $bottom, $left)
+	position: $position_name
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left

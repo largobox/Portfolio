@@ -1,0 +1,48 @@
+.contact_cnt
+	text-align: center
+	background-color: $bgcolor
+	overflow-x: hidden
+
+	.social_links
+		max-width: 400px
+		margin: 0 auto 50px
+		display: flex
+		justify-content: space-around
+
+		svg
+			padding: 12px
+			+size(40px)
+
+			path
+				fill: #fafafa
+
+		a
+			display: block
+			text-decoration: none
+			background-color: $color_h
+			font-size: 0
+			border-radius: 50%
+			transition: 0.3s
+
+			&:hover
+				transform: scale(1.25)
+
+
+	.bar
+		width: 150px
+		height: 0
+		border-top: 4px solid $color_h
+		margin: 0px auto 20px
+
+	.biglink
+		display: inline-block
+		font-size: 40px
+		text-decoration: none
+		margin-bottom: 50px
+		
+	@media (max-width: 500px)
+
+		.biglink
+			font-size: 32px
+
+

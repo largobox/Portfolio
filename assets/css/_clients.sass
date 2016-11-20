@@ -1,0 +1,142 @@
+.section_clients
+	position: relative
+
+.clients_belt
+	width: 100%
+	position: relative
+
+	.client_el
+		max-width: 750px
+		margin: 50px auto
+		display: none
+		position: relative
+		z-index: 1
+
+		&.active_client
+			display: flex
+			@extend %anim
+
+		.client_pic
+			min-width: 300px
+
+			img
+				max-width: 80px
+				max-height: 80px
+				border-radius: 50%
+
+			text-align: center
+
+			.client_name
+				display: block
+				text-transform: uppercase
+				font-weight: bold
+
+			.client_title
+				font-style: normal
+				font-size: 14px
+				color: #919191
+
+		.client_content
+			padding: 0px 20px
+			font-size: 18px
+			line-height: 32px
+			font-weight: 300
+			position: relative
+
+.clients_logo
+	position: relative
+	max-width: 750px
+	margin: 50px auto 100px
+	display: flex
+	justify-content: space-around
+	z-index: 1
+	
+	.client_logo
+		cursor: pointer
+		margin: 0 20px
+		transition: .3s
+		border-bottom: 4px solid transparent
+		opacity: .5
+		padding-bottom: 12px
+
+	.active_logo
+		border-bottom: 4px solid $color_h
+		opacity: 1
+
+.client_quote_mark
+	+position(absolute, -5px, null, null, -15px)
+	+size(60px)
+	z-index: -1
+	opacity: .2
+	
+	path
+		fill: $color_h
+
+.client_controls
+	+position(absolute, 0px, 0px, 0px, 0px)
+	z-index: 1
+
+	svg
+		+size(40px)
+		path
+			fill: $color_h
+
+	div
+		+size(40px)
+		margin-top: -20px
+
+	.client_control_next
+		+position(absolute, 50%, 10px, null, null)
+
+	.client_control_prev
+		+position(absolute, 50%, null, null, 10px)
+
+// Clients mobile navigation
+
+.clients_mobile_nav
+	text-align: center
+	display: none
+
+	span
+		cursor: pointer
+		display: inline-block
+		+size(20px)
+		border-radius: 50%
+		border: solid 2px $bgcolor
+		margin: 0px 10px
+
+		&.active_logo
+			border-color: $color_h
+
+@media (max-width: 750px)
+	
+	.clients_mobile_nav
+		display: block
+
+	.client_controls
+		display: none
+
+	.clients_belt
+
+		.client_el.active_client
+			display: block
+			position: relative
+			left: auto
+			margin-left: 0
+
+			.client_pic
+				margin-bottom: 20px
+
+			.client_content
+				text-align: center
+
+			.client_quote_mark
+				left: 0px
+				top: -20px
+
+	.clients_logo
+		display: none
+
+
+
+

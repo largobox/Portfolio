@@ -1,0 +1,115 @@
+.work_cnt
+	background: $bgcolor
+	overflow-x: hidden
+
+.work_belt
+	width: 200%
+	position: relative
+	left: 0%
+	transition: .65s
+	+clearfix()
+
+
+	.work_inner_wrap, .work_desc_wrap
+		width: 50%
+		float: left
+
+	.work_desc_cnt
+		max-width: 600px
+		margin: 0px auto
+		position: relative
+		display: none
+
+		.project_load
+			font-size: 18px
+			color: rgba(0,0,0, 0.8)
+			letter-spacing: 0.5px
+			padding-bottom: 200px
+
+			a:hover
+				text-decoration: none
+
+		h4
+			color: $color_h
+			font-weight: normal
+			text-transform: uppercase
+			font-size: 24px
+			margin: 0px 0px 20px
+
+		img
+			width: 100%		
+
+		.work_return
+			+size(40px)
+			cursor: pointer
+			opacity: .45
+			+position(absolute, -4px, 0px, 0px, -60px)
+
+			svg
+				+size(40px)
+
+			&:hover
+				opacity: .9
+
+		@media screen and (max-width: 740px)
+			.work_return
+				left: 0px
+
+			h4
+				margin-left: 60px
+
+			.project_load
+				padding: 0 20px
+
+//-------------------------------------
+
+.work_inner_cnt
+	max-width: 960px
+	margin: 0px auto
+	padding-bottom: 200px
+	+clearfix()
+
+	.work_el
+		display: block
+		width: 25%
+		padding-top: 16%
+		float: left
+		position: relative
+		overflow: hidden
+
+		background:
+			position: center center
+			repeat: no-repeat
+			size: cover
+
+		@media screen and (max-width: 740px)
+			width: 50%
+			padding-top: 26%
+
+		.work_load
+			text-align: center
+			+position(absolute, 0px,0px, null,0px)
+			height: 100%
+			background: fade-out($color_h, 0.12) 
+			display: flex
+			align-items: center
+			justify-content: center
+			transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
+			strong
+				display: block
+				padding: 0px 20px
+				color: #fafafa
+				font-weight: normal
+				text-transform: uppercase
+				font-size: 24px
+
+		&:hover .work_load
+			@extend %anim
+
+
+
+
+
+
+

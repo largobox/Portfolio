@@ -1,0 +1,41 @@
+<section class="section_clients">
+	
+	<h3 id="clients">Clients</h3>
+
+	<div class="client_controls">
+		<div class="client_control_prev">{% include icons/icon_prev.html %}</div>
+		<div class="client_control_next">{% include icons/icon_next.html %}</div>
+	</div>
+
+
+	<div class="clients_mobile_nav">
+		{% for client in site.data.base_data.clients %}
+			<span></span>
+		{% endfor %}
+	</div>
+
+	<div class="clients_belt">
+		
+		{% for client in site.data.base_data.clients %}
+			<div class="client_el">
+				<div class="client_pic">
+					<img src="assets/img/clients/{{client.avatar}}" alt="Client picture">
+					<strong class="client_name">{{client.name}}</strong>
+					<em class="client_title">{{client.title}}</em>
+				</div>
+				<div class="client_content">
+					<div class="client_quote_mark">{% include icons/icon_quote_mark.html %}</div>
+					{{client.content}}
+				</div>
+			</div>
+		{% endfor %}
+
+	</div>
+
+	<div class="clients_logo">
+		{% for client in site.data.base_data.clients %}
+			<img class="client_logo" src="assets/img/clients/{{client.logo}}" alt="{{client.logo}}">
+		{% endfor%}
+	</div>
+
+</section>
